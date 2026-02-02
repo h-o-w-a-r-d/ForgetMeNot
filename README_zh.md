@@ -1,4 +1,4 @@
-# 🌱 ForgetMeNot - 網站遺忘助手
+# 🚫 ForgetMeNot - 網站遺忘助手
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Manifest](https://img.shields.io/badge/Manifest-V3-blue)
