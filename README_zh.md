@@ -4,6 +4,8 @@
 ![Manifest](https://img.shields.io/badge/Manifest-V3-blue)
 ![Platform](https://img.shields.io/badge/Chrome-Extension-googlechrome)
 
+[English ver](README.md)
+
 **ForgetMeNot** 是一個注重隱私的 Chrome 擴充功能。它的核心功能非常簡單且強大：**當您關閉某個網站的最後一個分頁時，自動清除該網站的所有瀏覽數據**（Cookies, Cache, LocalStorage 等）。
 
 不再讓不需要的網站追蹤您的數位足跡，保持瀏覽器的輕量與隱私。
