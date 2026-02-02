@@ -2,30 +2,30 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>ForgetMeNot 設定</title>
+  <title>ForgetMe setting</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>🌱 ForgetMeNot 設定</h1>
+    <h1>🚫 ForgetMe setting</h1>
     
     <div class="form-group">
-      <label for="modeSelect">運作模式</label>
+      <label for="modeSelect">Operating Model</label>
       <select id="modeSelect">
-        <option value="blacklist">⛔ 黑名單模式 (預設)</option>
-        <option value="whitelist">🛡️ 白名單模式</option>
+        <option value="blacklist">⛔ Blacklist mode (Default)</option>
+        <option value="whitelist">🛡️ Whitelist mode</option>
       </select>
       <p class="hint" id="modeHint">
-        黑名單模式：只有<b>符合</b>下方規則的網站，關閉時才會清除數據。
+		Blacklist mode: Data will only be cleared when a website that meets the rules below is closed.
       </p>
     </div>
 
     <div class="form-group">
-      <label for="rulesTextarea">網域規則 (正則表達式 Regex)</label>
+      <label for="rulesTextarea">Domain Rules (Regex)</label>
       <textarea id="rulesTextarea" rows="10" spellcheck="false"></textarea>
     </div>
 
-    <button id="saveBtn">💾 儲存設定</button>
+    <button id="saveBtn">💾 Storage settings</button>
   </div>
 
   <!-- Toast 通知容器 -->

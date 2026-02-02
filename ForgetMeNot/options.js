@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 定義 Placeholder 提示文字
   const placeholders = {
-    blacklist: "請輸入要自動清除的網域 Regex，每行一個。\n例如：\nfacebook\\.com\n.*\\.google\\.com",
-    whitelist: "請輸入要「保留」數據的網域 Regex，每行一個。\n(未列出的網域將在關閉最後分頁時自動清除)\n例如：\nkeep-me-logged-in\\.com\nimportant-work\\.net"
+    blacklist: "Please enter the domains(Regex) to be automatically cleared, one per line.\n e.g. : \nfacebook\\.com\n.*\\.google\\.com",
+    whitelist: "Please enter the domain(Regex) names for which you want to retain data, one per line.\n(Domains not listed will be automatically cleared when the last page is closed.)\n e.g. : \nkeep-me-logged-in\\.com\nimportant-work\\.net"
   };
 
   // 1. 讀取設定
@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateUI(mode) {
     rulesTextarea.placeholder = placeholders[mode];
     if (mode === 'blacklist') {
-      modeHint.innerHTML = '黑名單模式：只有<b>符合</b>下方規則的網站，關閉最後分頁時才會清除數據。';
+      modeHint.innerHTML = '⛔ Blacklist mode: Data will only be cleared when a website that meets the rules below is closed.';
     } else {
-      modeHint.innerHTML = '🛡️ 白名單模式：<b>符合</b>下方規則的網站會被保留，<b>其餘所有網站</b>關閉最後分頁時都會清除數據。';
+      modeHint.innerHTML = '🛡️ Whitelist mode: Websites that meet the rules below will be retained, while data for all other websites will be cleared when the last page is closed.';
     }
   }
 
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mode: mode,
       rules: rulesStr
     }, () => {
-      showToast('🌸 設定已儲存成功！ ✨🧹');
+      showToast('🌸 Settings saved successfully！ ✨🧹');
     });
   });
 
