@@ -1,4 +1,4 @@
-# 🌱 ForgetMeNot - Website Oblivion Assistant
+# 🚫 ForgetMeNot - Website Oblivion Assistant
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Manifest](https://img.shields.io/badge/Manifest-V3-blue)
