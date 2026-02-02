@@ -1,1 +1,21 @@
-
+{
+  "manifest_version": 3,
+  "name": "ForgetMeNot - 網站遺忘助手",
+  "version": "1.0.0",
+  "description": "當關閉網站的最後一個分頁時，自動清除該網站的 Cookies、Cache 與 LocalStorage。",
+  "permissions": [
+    "browsingData",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "128": "icon.png"
+  }
+}
