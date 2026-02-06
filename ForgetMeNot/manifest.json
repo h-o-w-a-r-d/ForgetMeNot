@@ -6,7 +6,9 @@
   "permissions": [
     "browsingData",
     "tabs",
-    "storage"
+    "storage",
+    "cookies",
+	"history" 
   ],
   "host_permissions": [
     "<all_urls>"
@@ -18,5 +20,4 @@
   "icons": {
     "128": "icon.png"
   }
-
 }
